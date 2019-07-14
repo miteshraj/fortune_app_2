@@ -2,7 +2,7 @@ class PagesController < ApplicationController
 	def fortune_method
 		fortunes = ["You will win the lottery", 
 			"You will become a billionaire today", 
-			"You will be hungry very soon"]
+			"You will be hungry very soon, go eat"]
 		render json: {fortune: fortunes.sample} 
 	end
 
