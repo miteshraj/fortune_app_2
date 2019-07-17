@@ -3,7 +3,7 @@ require 'unirest'
 system 'clear'
 puts "Choose an option"
 puts "[1] for random fortune"
-puts "[2] Lotto numbers"
+puts "[2] To generate your Lotto numbers"
 puts "[3] Page visit counter"
 puts "[4] Beer on the wall"
 
