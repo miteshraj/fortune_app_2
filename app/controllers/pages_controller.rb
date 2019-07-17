@@ -35,5 +35,11 @@ class PagesController < ApplicationController
 		99 bottles of beer on the wall"
 		render json: {song: song}
 	end
+
+	def meal_method
+		meals = ["Grilled Cheese", "Pasta", "Trader Joes Burritos",
+		"Salad", "Vegan Cheese Pizza"]
+		render json: {meal: meals.sample}
+	end
 end
  
