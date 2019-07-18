@@ -37,7 +37,7 @@ class PagesController < ApplicationController
 	end
 
 	def meal_method
-		meals = ["Grilled Cheese", "Pasta", "Trader Joes Burritos",
+		meals = ["Grilled Cheese", "Penne Pasta", "Trader Joes Burritos",
 		"Salad", "Vegan Cheese Pizza"]
 		render json: {meal: meals.sample}
 	end
