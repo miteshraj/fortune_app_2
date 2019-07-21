@@ -9,7 +9,7 @@ class PagesController < ApplicationController
 
 	def lucky_method 
 		numbers = []
-		9.times do 
+		10.times do 
 			numbers << rand(1..60)
 		end
 		render json: {lucky_numbers: numbers}
