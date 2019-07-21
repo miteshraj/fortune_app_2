@@ -7,18 +7,18 @@ class PagesController < ApplicationController
 		render json: {fortune: fortunes.sample} 
 	end
 
-	def lotto_method 
+	def lucky_method 
 		numbers = []
 		6.times do 
 			numbers << rand(1..60)
 		end
-		render json: {lotto_numbers: numbers}
+		render json: {lucky_numbers: numbers}
 	end
 
 	def count
 		count = 0
 		count += 1
-		render json: {visit_count: count}
+		render json: {visit_count: count.to_s + ", This proves that you cannot count the number of clicks due to a refreshes occuring that reset the counter"}
 	end
 
 	def beer_method
