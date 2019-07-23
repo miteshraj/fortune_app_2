@@ -41,5 +41,10 @@ class PagesController < ApplicationController
 		"Salad", "Vegan Cheese Pizza"]
 		render json: {meal: meals.sample}
 	end
+
+	def dessert_method
+		desserts = ["Ice Cream", "Cheese Cake", "Flan", "Fruits", "Cake"]
+		render json: {dessert: desserts.sample}
+	end
 end
  

@@ -5,4 +5,5 @@ get "/lucky_numbers_url" => "pages#lucky_method"
 get "/count_url" => "pages#count" 
 get "/beer_url" => "pages#beer_method"
 get "/meal_reccomendation_url" => "pages#meal_method"
+get "/dessert_url" => "pages#dessert_method"
 end
